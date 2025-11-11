@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    
+<!-- Om script ligger i exempelvis body, så kan js-koden laddas innan sidan har laddat klart, vilket kan leda till crash.
+ Ett säkert kort är att placera den i slutet av koden innanför '</body' för då laddas hela HTML-sidan sen laddas och körs js-koden  -->
+<script src= "script.js" defer ></script>
 </body>
+<!-- Vad gör defer? Det gör så att JavaScript körs när hela HTML-koden är färdig. Detta betyder att man i praktiken skulle kunna lägga
+ js-koden i head till exempel, men js-koden kommer att köras först nära hela HTML-koden är färdig. -->
 </html>
