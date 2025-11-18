@@ -25,9 +25,6 @@ console.log(intresse + namn);
 /*UPPGIFT 3
 Två stycken = tecken betyder att den jämför värde utan att bry sig om datatypen.
 Tre stycken = tecken jämför den både värde och datatyp. */
-console.log("9" == 9);
-console.log("9" === 9);
-
 /* 
 NaN = Not a number, representerar ett misslyckat talresultat.
 Null = Ett värde som finns men medvetet om att det är tomt.
@@ -37,6 +34,9 @@ När NaN jämförs med NaN så är det alltid false. Det är bara så med NaN.
 Här jämförs om null är undefined vilket är sant.
 Här jämförs om null och undefined är samma värde och datatyp vilket inte är sant.*/
 
+console.log("9" == 9);
+console.log("9" === 9);
+
 console.log(NaN === NaN);
 console.log(null == undefined);
 console.log(null === undefined);
@@ -44,10 +44,11 @@ console.log(null === undefined);
 let resultat = undefined ? "Truthy" : "Falsy";
 console.log("Undefined är: ", resultat);
 
+
 /* 
 UPPGIFT 4
 I detta fall har vi använt ett funktionsuttryck. Denna sparas i en variabel och funktionen skapas när koden körs och inte i förväg.
-Om man anropar en function inom ett visst scope så har den endast de värdena som finns i deta scopet.
+Om man anropar en function inom ett visst scope så har den endast de värdena som finns i detta scopet.
 Exempelvis påverkas inte myName som befinner sig utanför scopet för funktionen greet utav det som befinner sig inom den.
 Om jag ändrar let myName efter att jag deklarerat den så kommer den få det nya värdet. Man kan alltså ändra den hur många gånger som helst och det är alltid det nya värdet som gället. */
 
